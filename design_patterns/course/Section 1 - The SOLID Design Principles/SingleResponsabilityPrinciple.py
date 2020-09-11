@@ -3,6 +3,8 @@ My notes:
     We have to separete Classes
     We have to avoid God Objects
     Persistance manager is a good way to take Persistance to another level
+    Patterns are Good, Anti Patterns are bad
+    We have to avoid change code twice
 """
 
 class Journal:
@@ -21,6 +23,8 @@ class Journal:
         return "\n".join(self.entries)
 
     # break SRP
+    # ALERT!!!
+    # We HAVE TO AVOID THIS
     # def save(self, filename):
     #     file = open(filename, "w")
     #     file.write(str(self))
@@ -33,6 +37,7 @@ class Journal:
     #     pass
 
 
+# WE KEEP SRP By creating another class to handle Persistence
 class PersistenceManager:
     @staticmethod
     def save_to_file(journal, filename):

@@ -1,3 +1,5 @@
+from abc import ABC, abstractmethod
+
 class PayrollSystem:
     def calculate_payroll(self, employees):
         print('*******************')
@@ -9,10 +11,18 @@ class PayrollSystem:
             print('')
 
 
-class Employee:
+# This class exist only to be inheritance
+# We call this behavior ABSTRACT CLASS
+class Employee(ABC):
     def __init__(self, id, name):
         self.id = id
         self.name = name
+
+    # we comment this to follow our base UML
+    # @abstractmethod
+    # def calculate_payroll(self):
+    #     pass
+
 
 
 class SalaryEmployee(Employee):

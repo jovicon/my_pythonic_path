@@ -3,9 +3,9 @@ import employees
 import productivity
 
 manager = employees.Manager(1, 'Jose Contreras', 1500)
-secretary = employees.Secretary(1, 'Jose Contreras', 750)
+secretary = employees.Secretary(1, 'Laura Vergara', 750)
 sales_guy = employees.SalesPerson(3, 'Pablo Espinoza', 1000, 250)
-factory_worker = employees.FactoryWorker(3, 'Pablo Espinoza', 1000, 250)
+factory_worker = employees.FactoryWorker(3, 'Gustavo Cumare', 40, 20)
 
 
 # we comment this because Employee is an Abstract Class, so It can be instaciated

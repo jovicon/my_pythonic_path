@@ -18,7 +18,7 @@ Employee is an Abstract Class, so **we do not intanciate it**
 For a better approach we import from basic python libraries
 to indicated to other developers that is an **abstrated class**
 
-´´´python
+```python
 from abc import ABC, abstractmethod
 
 class Employee(ABC):
@@ -30,4 +30,4 @@ class Employee(ABC):
     def calculate_payroll(self):
         pass
 
-´´´
+```

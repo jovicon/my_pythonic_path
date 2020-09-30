@@ -2,9 +2,9 @@ class ProductivitySystem:
     def __init__(self):
         self._roles = {
             'manager': ManagerRole,
-            # 'secretary': SecretaryRole,
-            # 'sales': SalesRole,
-            # 'factory': FactoryRole
+            'secretary': SecretaryRole,
+            'sales': SalesRole,
+            'factory': FactoryRole
         }
 
     def get_role(self, role_id):
